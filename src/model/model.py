@@ -1,29 +1,29 @@
 
-import init_paths
+# import init_paths
 import os
 import torch
-from src.utils.fourier_feature_transform import FourierFeatureTransform
+# from src.utils.fourier_feature_transform import FourierFeatureTransform
 import numpy as np
-from typing import Union
+# from typing import Union
 
-from torch.nn import functional as F
-from src.model.losses import SilhouetteLoss, TextureLossGTSpace, DisplacementLoss, MeshSmoothnessLoss, PerceptualLoss, RestylePerceptualLoss, ContrastiveLoss
-from src.model.renderer import FootRenderer
-from src.train.opts import Opts
+# from torch.nn import functional as F
+# from src.model.losses import SilhouetteLoss, TextureLossGTSpace, DisplacementLoss, MeshSmoothnessLoss, PerceptualLoss, RestylePerceptualLoss, ContrastiveLoss
+# from src.model.renderer import FootRenderer
+# from src.train.opts import Opts
 
-from pytorch3d.structures import Meshes
-from pytorch3d.transforms import euler_angles_to_matrix, Transform3d
-from pytorch3d.renderer import TexturesVertex, TexturesUV
-from pytorch3d.io import load_obj as p3d_load_obj
-from pytorch3d.ops import sample_points_from_meshes
-from src.utils.utils import cfg
-from scipy.io import loadmat
+# from pytorch3d.structures import Meshes
+# from pytorch3d.transforms import euler_angles_to_matrix, Transform3d
+# from pytorch3d.renderer import TexturesVertex, TexturesUV
+# from pytorch3d.io import load_obj as p3d_load_obj
+# from pytorch3d.ops import sample_points_from_meshes
+# from src.utils.utils import cfg
+# from scipy.io import loadmat
 import cv2
 
-from src.utils.pytorch3d_tools import extend_template
-import trimesh
+# from src.utils.pytorch3d_tools import extend_template
+# import trimesh
 
-from src.model.SUPR.supr.pytorch.supr import SUPR
+# from src.model.SUPR.supr.pytorch.supr import SUPR
 
 nn = torch.nn
 
